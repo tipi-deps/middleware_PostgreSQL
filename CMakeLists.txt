@@ -48,4 +48,6 @@ set_property(TARGET OpenSSL::Crypto PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${OPE
 add_dependencies(OpenSSL::Crypto OpenSSL)
 
 file(MAKE_DIRECTORY ./directory_to_cheat)
-install(DIRECTORY ./directory_to_cheat ${CMAKE_CURRENT_BINARY_DIR} )
+install(DIRECTORY ./directory_to_cheat 
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR} 
+)
