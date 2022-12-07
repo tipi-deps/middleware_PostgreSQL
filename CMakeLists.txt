@@ -46,3 +46,6 @@ add_library(OpenSSL::Crypto STATIC IMPORTED GLOBAL)
 set_property(TARGET OpenSSL::Crypto PROPERTY IMPORTED_LOCATION ${OPENSSL_INSTALL_DIR}/lib/libcrypto.${OPENSSL_LIBRARY_SUFFIX})
 set_property(TARGET OpenSSL::Crypto PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${OPENSSL_INCLUDE_DIR})
 add_dependencies(OpenSSL::Crypto OpenSSL)
+
+file(MAKE_DIRECTORY ./directory_to_cheat)
+install(DIRECTORY ./directory_to_cheat)
