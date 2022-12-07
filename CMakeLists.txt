@@ -33,7 +33,6 @@ ExternalProject_Add(
   BUILD_COMMAND make -j${Ncore}
   TEST_COMMAND ""
   INSTALL_COMMAND make install
-  INSTALL_DIR ${OPENSSL_INSTALL_DIR}
 )
 
 file(MAKE_DIRECTORY ${OPENSSL_INCLUDE_DIR})
