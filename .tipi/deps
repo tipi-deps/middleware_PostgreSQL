@@ -1,6 +1,5 @@
 {
   "u" : true
   , "packages" : ["PostgreSQL"]
-  , "targets" : ["libpq"]
-  , "find_mode" : " "
+  , "targets" : ["PostgreSQL::libpq"]
 }
