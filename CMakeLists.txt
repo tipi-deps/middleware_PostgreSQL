@@ -14,6 +14,12 @@ include(ExternalProject)
 include(ProcessorCount)
 include(hunter_autotools_project)
 
+hunter_cmake_args(
+    PostgreSQL
+    CMAKE_ARGS
+      EXTRA_FLAGS="--without-readline --without-zlib"
+)
+
 ProcessorCount(Ncore)
 
 hunter_autotools_project("PostgreSQL"
