@@ -38,8 +38,7 @@ hunter_autotools_project("PostgreSQL"
       "${Ncore}"
     PACKAGE_CONFIGURATION_TYPES
       "${CMAKE_BUILD_TYPE}"
-    EXTRA_FLAGS
-      "--without-readline --without-zlib"
+    EXTRA_FLAGS --without-readline --without-zlib
     BOOTSTRAP
       ""
 )
