@@ -13,6 +13,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
 include(ExternalProject)
 include(ProcessorCount)
 include(hunter_autotools_project)
+include(hunter_cmake_args)
 
 ProcessorCount(Ncore)
 
